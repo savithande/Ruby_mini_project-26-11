@@ -3,18 +3,26 @@
 <head>
 	 <%= stylesheet_link_tag "form" %>
 	<title>
-		
+
 	</title>
 </head>
-<body background="assets/background_img.jpg">
+<body background="assets/background3.mp4">
 	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<table>
+
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<table id="customers1">
 	<br><br><br>
+
 	<tr>
+
 			<p><%= alert %></p>
-			<h1>Login</h1>
+			<h2>Login</h2>
 			<%= form_tag sessions_path do |form| %>
-	</tr><br><br><br><br>
+	</tr>
+
 	<tr style="text-align: center;height: 25px;">
 
 		   <div   style="text-align: center;font-size: 16px;">
@@ -27,28 +35,60 @@
 
 		   	</td>
 		 </div>
-	</tr> 
+	</tr>
 	<tr>
-		   <div class="field" style="text-align: center;">
+		   <div class=" " style="text-align: center;">
 		   	<td style="color: white;font-size: 20px;">
 		   		<%= label_tag :password %>
 		   	</td>
 		   	<td style="height: 45px;">
 		   		<%= password_field_tag :password %>
-		   	</td> 
+		   	</td>
 		 </div>
 	</tr>
-	<tr>
-			<div class="actions" >
-				<td style="text-align: center;">
-					<button>
-						<%= submit_tag "Login" %>
-					</button>
-				</td>
-		 	</div>
-	</tr>
-	<% end %>
+	
+
+
 </table>
+		<div class="actions" >
+			 
+				<h3><%= submit_tag "Login" %><h3>
+		 </div>
+
+	
+
+	<% end %>
+ 
+
+	<video autoplay muted loop id="myVideo">
+	  <source src="/assets/background7.webm" type="video/mp4">
+	</video>
+
+	<!-- Optional: some overlay text to describe the video -->
+
+
+
+
+
+
+	<!-- javsscrit for the video -->
+	<script>
+	// Get the video
+	var video = document.getElementById("myVideo");
+
+	// Get the button
+	var btn = document.getElementById("myBtn");
+
+	// Pause and play the video, and change the button text
+	function myFunction() {
+	  if (video.paused) {
+	    video.play();
+	    btn.innerHTML = "Pause";
+	  } else {
+	    video.pause();
+	    btn.innerHTML = "Play";
+	  }
+	}
+	</script>
 </body>
 </html>
-

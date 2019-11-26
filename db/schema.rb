@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_21_060803) do
+ActiveRecord::Schema.define(version: 2019_11_26_114544) do
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -22,10 +22,10 @@ ActiveRecord::Schema.define(version: 2019_11_21_060803) do
     t.integer "Salary_per_annum"
     t.integer "Salary_per_month"
     t.string "address"
-    t.integer "Mobile"
+    t.string "Mobile"
     t.string "Blood_type"
     t.string "Emergency_contact_name"
-    t.integer "Emergency_contact_number"
+    t.string "Emergency_contact_number"
     t.string "Primary_skill"
     t.string "Secondary_skill1"
     t.string "Secondary_skill2"

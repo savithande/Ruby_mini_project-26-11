@@ -1,5 +1,5 @@
  table{
- 	 	background-color: ;
+   
  	border-collapse: collapse;
  	width: 600px;
  	position: relative;
@@ -11,5 +11,5 @@
  td,tr{
  	text-align: left;
  	border: brown 2px collapse;
- 	 
+
  }

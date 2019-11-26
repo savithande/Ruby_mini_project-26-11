@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- 
+
   <meta http-equiv = "Content-Type" content = "text/html; charset = iso-8859-1" />
    <%= stylesheet_link_tag "form" %>
 
@@ -111,7 +111,7 @@
       <%= form.label :Mobile %>
     </td>
     <td>
-      <%= form.number_field :Mobile %>
+      <%= form.text_field :Mobile, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required=>true%>
     </td>
   </tr>
    <tr>
@@ -119,7 +119,7 @@
       <%= form.label :Blood_type %>
     </td>
     <td>
-      <%= form.text_field :Blood_type %>
+      <%= form.select :Blood_type, ['A+', 'A-','B+','B-','AB+','AB-','O+','O-']%>
     </td>
   </tr>
    <tr>
@@ -135,7 +135,7 @@
       <%= form.label :Emergency_contact_number %>
     </td>
     <td>
-       <%= form.number_field :Emergency_contact_number %>
+       <%= form.text_field :Emergency_contact_number, :pattern=>'\d*', :maxlength=>10, :minlength=>10, :required=>true%>
     </td>
   </tr>
    <tr>
@@ -194,10 +194,36 @@
 </table>
 
 
+<video autoplay muted loop id="myVideo">
+  <source src="/assets/background5.mp4" type="video/mp4">
+</video>
 
+<!-- Optional: some overlay text to describe the video -->
+
+
+
+
+
+
+<!-- javsscrit for the video -->
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
 
 </body>
 </html>
-
-
-

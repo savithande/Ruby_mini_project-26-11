@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%= stylesheet_link_tag "show" %>
+	<%= stylesheet_link_tag "form" %>
 	<title>
-		
+
 	</title>
 </head>
 <body>
@@ -14,34 +14,52 @@
 
 </h2>
 <br>
-<table>
+<table id="customers">
 	<tr>
 		<td>
 			  <strong>First_name:</strong>
+				</td>
+				<td>
 			  <%= @user.First_name %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			  <strong>Last_name:</strong>
+				</td>
+				<td>
 			  <%= @user.Last_name %>
 		</td>
 	</tr>
 	<tr>
 		<td>
   				<strong>age:</strong>
+					</td>
+					<td>
  				 <%= @user.age %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>date_of_joining:</strong>
+			</td>
+			<td>
 			<%= @user.date_of_joining %>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<strong>Salary_per_annum:</strong>
+			</td>
+			<td>
 			<%= @user.Salary_per_annum %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>Salary_per_month:</strong>
+			</td>
+			<td>
 			<%= @user.Salary_per_annum %>
 		</td>
 
@@ -49,57 +67,88 @@
 	<tr>
 		<td>
 			<strong>email:</strong>
+			</td>
+			<td>
 			<%= @user.email %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>address:</strong>
+			</td>
+			<td>
 			<%= @user.address %>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<strong>Emergency_contact_name:</strong>
+			</td>
+			<td>
 			<%= @user.Emergency_contact_name %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>Emergency_contact_number:</strong>
+			</td>
+			<td>
 			<%= @user.Emergency_contact_number %>
 		</td>
-		
 	</tr>
 		<tr>
 		<td>
 			<strong>Mobile:</strong>
+			</td>
+			<td>
 			<%= @user.Mobile %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>Blood_type:</strong>
+			</td>
+			<td>
 			<%= @user.Blood_type %>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<strong>Primary_skill:</strong>
+			</td>
+			<td>
 			<%= @user.Primary_skill %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>Secondary_skill1:</strong>
+			</td>
+			<td>
 			<%= @user.Secondary_skill1 %>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<strong>Secondary_skill2:</strong>
+			</td>
+			<td>
 			<%= @user.Secondary_skill2 %>
 		</td>
+		</tr>
+		<tr>
 		<td>
 			<strong>Notice_period_in_days:</strong>
+			</td>
+			<td>
 			<%= @user.Notice_period_in_days %>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<strong>Job role:</strong>
+			</td>
+			<td>
 			<%= @user.role %>
 		</td>
 
@@ -109,16 +158,43 @@
 
 </table>
 <p>
-   
+
 </p>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<button><%= link_to 'Edit', edit_user_path(@user) %></<button>
+	<button ><%= link_to 'Back', users_path %></button>
+
+	<video autoplay muted loop id="myVideo">
+	  <source src="/assets/background5.mp4" type="video/mp4">
+	</video>
+
+	<!-- Optional: some overlay text to describe the video -->
+
+
+
+
+
+
+	<!-- javsscrit for the video -->
+	<script>
+	// Get the video
+	var video = document.getElementById("myVideo");
+
+	// Get the button
+	var btn = document.getElementById("myBtn");
+
+	// Pause and play the video, and change the button text
+	function myFunction() {
+	  if (video.paused) {
+	    video.play();
+	    btn.innerHTML = "Pause";
+	  } else {
+	    video.pause();
+	    btn.innerHTML = "Play";
+	  }
+	}
+	</script>
+
 
 </body>
 </html>
-
-
-
-
-
