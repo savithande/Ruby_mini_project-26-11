@@ -1,9 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <%= stylesheet_link_tag "form" %>
 	<title>
+		<style media="screen">
+			#customers {
+			 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			 border-collapse: collapse;
+			 font-size: 20px;
+			 width:  700px;
+		 }
 
+		 #customers td, #customers th {
+			 border: 1px solid #ddd;
+			 padding: 15px;
+		 }
+
+		 #customers tr:nth-child(even){background-color: #fdfd;}
+
+		 #customers tr:hover {background-color: #ddd;
+		 font-size: 15px;
+		 font-color:#ffffff;
+		 }
+
+		 #customers th {
+			 padding-top: 12px;
+			 padding-bottom: 12px;
+			 text-align: left;
+			 background-color: #8000ff ;
+			 color: white;
+		 }
+		 h1{
+			 padding: 30px;
+			 text-align: center;
+			 color: black;
+			 font-size: 30px;
+			 background-color: gray;
+		 }
+		 button{
+			 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+			 border: 2px solid black;
+			 height: 40px;
+			 width: 80px;
+			 color: black;
+		 }
+		 h2{
+			 padding: 30px;
+			 text-align: center;
+			 color: black;
+			 font-size: 30px;
+			color: white;
+		 }
+		 h3{
+				text-align: center;
+		 }
+		 #customers1{
+			 font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			 border-collapse: collapse;
+			 font-size: 20px;
+			 width:  700px;
+		 }
+		 #customers1 td, #customers1 th{
+			 border: 1px solid black;
+			 padding: 15px;
+			 text-align: center;
+		 }
+		 #customers1 th{
+			 padding-top: 12px;
+			 padding-bottom: 12px;
+			 text-align: left;
+			 background-color: #8000ff ;
+			 color: white
+		 }
+		</style>
 	</title>
 </head>
 <body background="assets/background3.mp4">
@@ -46,19 +114,19 @@
 		   	</td>
 		 </div>
 	</tr>
-	
+
 
 
 </table>
 		<div class="actions" >
-			 
+
 				<h3><%= submit_tag "Login" %><h3>
 		 </div>
 
-	
+
 
 	<% end %>
- 
+
 
 	<video autoplay muted loop id="myVideo">
 	  <source src="/assets/background7.webm" type="video/mp4">
